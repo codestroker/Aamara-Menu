@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="box">
+    <h1 id="menu-background">Menu</h1>
+    <div class="image-container">
+      <button class="nav-button left-button" onclick="showPreviousImage()">&#8249;</button>
+      <img id="menu-image" src="dish1.png" alt="Delicious Food" class="menu-image">
+      <button class="nav-button right-button" onclick="showNextImage()">&#8250;</button>
+    </div>
+    <div class="menu-container">
+      <div class="background-container">
+        <div class="menu-boxes">
+          <!-- Dynamically generate boxes -->
+        </div>
+        </div>  
+        <div id="foods-section" style="padding: 20px; text-align: center;">
+          <h2>Foods</h2>
+          <p>Welcome to the Foods section. Here you'll find delicious dishes that satisfy your taste buds</p>
+        </div>
+        <div class="center-container" >
+          <h3>A LA CARTE</h3>
+        </div>
+        <div class="center-container">
+          <h3>PALATE TRIGGERS</h3>
+        </div>
+        <div class="menu-container-1">
+          <!-- First set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/potli-samosa.jpg" alt="Potli Samosa" class="menu-image">
+              <p class="menu-name">Potli Samosa</p>
+              <p class="menu-price">$14</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/idli.jpg" alt="Gunpowder idli" class="menu-image">
+              <p class="menu-name">Gunpowder Idli</p>
+              <p class="menu-price">$16</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/kurkure-okra-chaat.png" alt="Kurkure okra chaat" class="menu-image">
+              <p class="menu-name">Kurkure Okra Chaat</p>
+              <p class="menu-price">$16</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/kola-urundai.png" alt="kolaurundai" class="menu-image">
+              <p class="menu-name">Kayiru Katti mutton kola urundai</p>
+              <p class="menu-price">$21</p>
+          </div>
+          <div class="menu-box-1">
+            <img src="/images/golden-lamb-chop.png" alt="Golden Lamb Chop" class="menu-image">
+            <p class="menu-name">Rold Gold Lamb Chop</p>
+            <p class="menu-price">$28</p>
+          </div>
+          <div class="menu-box-1">
+            <img src="/images/chicken-avacado -chaat.png" alt="Butter Naan" class="menu-image">
+            <p class="menu-name">Chicken Avocado Chaat</p>
+            <p class="menu-price">$18</p>
+          </div>
+          <div class="menu-box-1">
+            <img src="/images/anchovy-fish-fry.png" alt="Anchovy Fish Fry" class="menu-image">
+            <p class="menu-name">Anchovy Fish Fry</p>
+            <p class="menu-price">$6</p>
+          </div>
+        </div>
+        
+        <!-- "Epicure's Bounty" heading -->
+        <div class="center-container">
+          <h3>EPICURE'S BOUNTY</h3>
+        </div>
+        
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/purple-malai-kofta.png" alt="Purple Malai Kofta" class="menu-image">
+              <p class="menu-name">Purple Malai Kofta</p>
+              <p class="menu-price">$26</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/bhaigan-bartha.png" alt="Baingan bharta" class="menu-image">
+              <p class="menu-name">Baingan bharta</p>
+              <p class="menu-price">$28</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/paneer-pasanda.png" alt="Paneer Pasanda" class="menu-image">
+              <p class="menu-name">Paneer Pasanda</p>
+              <p class="menu-price">$28</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/moilee-kurma.png" alt="Pachakari Moilee Kurma" class="menu-image">
+              <p class="menu-name">Pachakari Moilee Kurma</p>
+              <p class="menu-price">$28</p>
+          </div>
+          <div class="menu-box-1">
+            <img src="/images/butter-chicken.png" alt="Classic Butter Chicken" class="menu-image">
+            <p class="menu-name">Classic Butter Chicken</p>
+            <p class="menu-price">$28</p>
+          </div>
+          <div class="menu-box-1">
+            <img src="/images/venison-chettinadu.png" alt="Venison Chettinadu" class="menu-image">
+            <p class="menu-name">Venison Chettinadu</p>
+            <p class="menu-price">$33</p>
+          </div>
+          <div class="menu-box-1">
+            <img src="/images/short-ribs-vindaloo.png" alt="Short ribs vindaloo" class="menu-image">
+            <p class="menu-name">Short Ribs Vindaloo</p>
+            <p class="menu-price">$31</p>
+        </div>
+        <div class="menu-box-1">
+          <img src="/images/lamb-sukka.png" alt="Lamb sukka" class="menu-image">
+          <p class="menu-name">Lamb Sukka</p>
+          <p class="menu-price">$28</p>
+        </div>
+        <div class="menu-box-1">
+          <img src="/images/goan-seabass-curry.png" alt="Goan Seabass Curry" class="menu-image">
+          <p class="menu-name">Goan Seabass Curry</p>
+          <p class="menu-price">$32</p>
+        </div>
+        </div>
+        <!-- "Probiotic Plates" heading -->
+        <div class="center-container">
+          <h3>Probiotic Plates</h3>
+        </div>
+         <!-- Description Box -->
+        <div class="description-box">
+          <p>
+            <em>
+              "Naturally fermented rice and pulses batter, prepared using various methods of cooking to derive texture"
+              <br>
+              "Served with sambar / paneer korma coconut chutney, tomato chutney and cilantro chutney"
+            </em>
+          </p>
+        </div>
+        <!-- "DOSA - THIN RICE CRISPS" heading -->
+        <div class="center-container">
+          <h3>DOSA - THIN RICE CRISPS</h3>
+        </div>
+        
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/special-dosa.png" alt="Special Dosa" class="menu-image">
+              <p class="menu-name">Special Dosa</p>
+              <p class="menu-price">$21</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/aamara-special-dosa.png" alt="Aamara Special Masala Dosa" class="menu-image">
+              <p class="menu-name">Aamara Special Masala Dosa</p>
+              <p class="menu-price">$25</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/chettinadu-chicken-dosa.png" alt="Chettinadu Chicken Dosa" class="menu-image">
+              <p class="menu-name">Chettinadu Chicken Dosa</p>
+              <p class="menu-price">$30</p>
+          </div>
+          </div>
+          <!-- "UTTAPAM - FLUFFY RICE PANCAKES" heading -->
+        <div class="center-container">
+          <h3>UTTAPAM - FLUFFY RICE PANCAKES</h3>
+        </div>
+        
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/bullet-uttapam.png" alt="Bullet Uttapam" class="menu-image">
+              <p class="menu-name">Bullet Uttapam</p>
+              <p class="menu-price">$22</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/spring-veggie-uttapam.png" alt="Spring Veggie Uttapam" class="menu-image">
+              <p class="menu-name">Spring Veggie Uttapam</p>
+              <p class="menu-price">$25</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/aamara-special-venison-uttapam.png" alt="Aamara Special Venison Uttapam" class="menu-image">
+              <p class="menu-name">Aamara Special Venison Uttapam</p>
+              <p class="menu-price">$30</p>
+          </div>
+          </div>     
+           <!-- "FROM THE CLAY OVEN" heading -->
+        <div class="center-container">
+          <h3>FROM THE CLAY OVEN</h3>
+        </div>
+        
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/tandoori-cornish-chicken.png" alt="Tandoori Cornish Chicken" class="menu-image">
+              <p class="menu-name">Tandoori Cornish Chicken</p>
+              <p class="menu-price">$32</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/basil-chicken-tikka.png" alt="Basil Chicken Tikka" class="menu-image">
+              <p class="menu-name">Basil Chicken Tikka</p>
+              <p class="menu-price">$24</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/beef-seekh-kebab.png" alt="Beef Seekh Kebab" class="menu-image">
+              <p class="menu-name">Beef Seekh Kebab</p>
+              <p class="menu-price">$26</p>
+          </div>
+          <div class="menu-box-1">
+            <img src="/images/tandoori-lobster-tail.png" alt="Tandoori Lobster Tail" class="menu-image">
+            <p class="menu-name">Tandoori Lobster Tail</p>
+            <p class="menu-price">$28</p>
+        </div>
+        <div class="menu-box-1">
+            <img src="images/sarson-ke-phool.png" alt="Sarson Ke Phool" class="menu-image">
+            <p class="menu-name">Sarson Ke Phool</p>
+            <p class="menu-price">$20</p>
+        </div>
+          </div>
+        <!-- Description Box -->
+        <div class="description-box">
+          <h4>Tandoori charcuterie platter - $72</h4>
+          <p>
+            <em>
+              A lavish wooden board featuring cornish hen, lamb chops, basil chicken,beef sheek, lobster tail,
+              <br>
+              tandoori broccoli, homemade cottage cheese, nuts, desi crackers, mesclun leaves, fruits & 2 shots paan
+            </em>
+          </p>
+        </div>     
+        <div id="hotpots-section" style="padding: 20px; text-align: center;">
+          <h2>Hot Pots</h2>
+          <p>Explore a variety of hot pots that will warm your soul</p>
+        </div>
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/hyderabad-chicken-biryani.png" alt="Hyderabadi Chicken Biryani" class="menu-image">
+              <p class="menu-name">Hyderabadi Chicken Biryani</p>
+              <p class="menu-price">$33</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/hyderabad-lamb-biryani.png" alt="Hyderabadi Lamb Biryani" class="menu-image">
+              <p class="menu-name">Hyderabadi Lamb Biryani</p>
+              <p class="menu-price">$34</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/vegetable-dum-biryani.png" alt="Vegetable Dum Biryani" class="menu-image">
+              <p class="menu-name">Vegetable Dum Biryani</p>
+              <p class="menu-price">$00</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/kashmiri-pulao.png" alt="Kashmiri Pulao" class="menu-image">
+              <p class="menu-name">Kashmiri Pulao</p>
+              <p class="menu-price">$14</p>
+          </div>
+        </div>
+        <div id="smallplates-section" style="padding: 20px; text-align: center;">
+          <h2>Small Plates</h2>
+          <p>Perfect for sharing, these small plates offer a variety of flavors</p>
+        </div>
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/dal-makhani.png" alt="Dal Makhani" class="menu-image">
+              <p class="menu-name">Dal Makhani</p>
+              <p class="menu-price">$15</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/cholae-khakra.png" alt="Chole Khakhra" class="menu-image">
+              <p class="menu-name">Chole Khakhra</p>
+              <p class="menu-price">$16</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/peanut-cornucopia.png" alt="Peanut Cornucopia" class="menu-image">
+              <p class="menu-name">Peanut Cornucopia</p>
+              <p class="menu-price">$14</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/steamed-rice.png" alt="Steamed Rice" class="menu-image">
+              <p class="menu-name">Steamed rice</p>
+              <p class="menu-price">$5</p>
+          </div>
+        </div>
+        <div id="breads-section" style="padding: 20px; text-align: center;">
+          <h2>Breads</h2>
+          <p>Freshly baked breads to complement your meal</p>
+        </div>
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/curried-mushroom-naan.png" alt="Curried Mushroom Naan" class="menu-image">
+              <p class="menu-name">Curried Mushroom Naan</p>
+              <p class="menu-price">$14</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/chicken-tikka-naan.png" alt="Chicken Tikka Naan" class="menu-image">
+              <p class="menu-name">Chicken Tikka Naan</p>
+              <p class="menu-price">$16</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/peshawari-naan.png" alt="Peshawari Naan" class="menu-image">
+              <p class="menu-name">Peshawari Naan</p>
+              <p class="menu-price">$16</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/tricheese-chilli-naan.png" alt="Tricheese Chilli Naan" class="menu-image">
+              <p class="menu-name">Tricheese Chilli Naan</p>
+              <p class="menu-price">$28</p>
+          </div>
+          <div class="menu-box-1">
+            <img src="/images/butter-naan-1.png" alt="Butter Naan" class="menu-image">
+            <p class="menu-name">Butter Naan</p>
+            <p class="menu-price">$6</p>
+          </div>
+          <div class="menu-box-1">
+            <img src="/images/garlic-naan.png" alt="Garlic Naan" class="menu-image">
+            <p class="menu-name">Garlic Naan</p>
+            <p class="menu-price">$7</p>
+        </div>
+        <div class="menu-box-1">
+          <img src="/images/roti.png" alt="Roti" class="menu-image">
+          <p class="menu-name">Roti</p>
+          <p class="menu-price">$5</p>
+        </div>
+        <div class="menu-box-1">
+          <img src="/images/laccha-paratha.png" alt="Laccha Paratha" class="menu-image">
+          <p class="menu-name">Laccha Paratha</p>
+          <p class="menu-price">$7</p>
+        </div>
+        </div>
+        <div id="desserts-section" style="padding: 20px; text-align: center;">
+          <h2>Desserts</h2>
+          <p>End your meal on a sweet note with our delicious desserts</p>
+        </div>
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/chilled-elaneer-payasam.png" alt="Chilled Elaneer Payasam" class="menu-image">
+              <p class="menu-name">Chilled Elaneer Payasam</p>
+              <p class="menu-price">$22</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/nizam-ka-meeta.png" alt="Nizam Ka Meeta" class="menu-image">
+              <p class="menu-name">Nizam Ka Meeta</p>
+              <p class="menu-price">$25</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/gulab-jamun.jpg" alt="Spring Berry Jamun" class="menu-image">
+              <p class="menu-name">Spring Berry Jamun</p>
+              <p class="menu-price">$23</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/ghevar-affogato.png" alt="Ghevar Affogato" class="menu-image">
+              <p class="menu-name">Ghevar Affogato</p>
+              <p class="menu-price">$24</p>
+          </div>
+        </div>
+        <div id="signature-section" style="padding: 20px; text-align: center;">
+          <h2>Signature</h2>
+          <p>Crafted to perfection, our signature drinks are sips of pure artistry! 🍸✨</p>
+        </div>
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/mumbai-monsoon.png" alt="Mumbai Monsoon" class="menu-image">
+              <p class="menu-name">Mumbai Monsoon</p>
+              <p class="menu-price">$23</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/jaipur-gem.png" alt="Jaipur Gem" class="menu-image">
+              <p class="menu-name">Jaipur Gem</p>
+              <p class="menu-price">$21</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/kolkatta-spice-market.png" alt="Kolkata Spice Market" class="menu-image">
+              <p class="menu-name">Kolkata Spice Market</p>
+              <p class="menu-price">$25</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/bengaluru-bliss.png" alt="Bengaluru Bliss" class="menu-image">
+              <p class="menu-name">Bengaluru Bliss</p>
+              <p class="menu-price">$20</p>
+          </div>
+        </div>
+        <div id="beer-section" style="padding: 20px; text-align: center;">
+          <h2>Beer</h2>
+          <p>Life's too short for bad beer - sip, savor, repeat! 🍻</p>
+        </div>
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/cheetahlager.png" alt="Cheetah-Lager-India" class="menu-image">
+              <p class="menu-name">Cheetah-Lager-India</p>
+              <p class="menu-price">$8</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/cheetahdark.png" alt="Cheetah-Dark-India" class="menu-image">
+              <p class="menu-name">Cheetah-Dark-India</p>
+              <p class="menu-price">$8</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/cheetahmango.png" alt="Cheetah - Mango Flavoured Beer" class="menu-image">
+              <p class="menu-name">Cheetah Mango Flavoured Beer</p>
+              <p class="menu-price">$8</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/asahi.png" alt="Asahi-Super Dry-Japan" class="menu-image">
+              <p class="menu-name">Asahi Super Dry Japan</p>
+              <p class="menu-price">$8</p>
+          </div>
+          <div class="menu-box-1">
+            <img src="/images/grolsch-premium.png" alt="Grolsch-Premium Pilsner-Dutch" class="menu-image">
+            <p class="menu-name">Grolsch Premium Pilsner Dutch</p>
+            <p class="menu-price">$8</p>
+        </div>
+        </div>
+        <div id="mocktail-section" style="padding: 20px; text-align: center;">
+          <h2>Mocktail</h2>
+          <p>Zero proof, 100% delight - our mocktails are pure magic in a glass! 🍹</p>
+        </div>
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/hibiscus-fizz.png" alt="Hibiscus Kaffir Fizz" class="menu-image">
+              <p class="menu-name">Hibiscus Kaffir Fizz</p>
+              <p class="menu-price">$17</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/turmeric-ginger-punch.png" alt="Turmeric Ginger Punch" class="menu-image">
+              <p class="menu-name">Turmeric Ginger Punch</p>
+              <p class="menu-price">$18</p>
+          </div>
+        </div>
+        <div id="cocktail-section" style="padding: 20px; text-align: center;">
+          <h2>Cocktail</h2>
+          <p>Delicious pasta dishes for every craving</p>
+        </div>
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/goa-coastline.png" alt="Goa Coastline" class="menu-image">
+              <p class="menu-name">Goa Coastline</p>
+              <p class="menu-price">$22</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/chennai-local-sarakku.png" alt="Chennai Local Sarakku" class="menu-image">
+              <p class="menu-name">Chennai Local Sarakku</p>
+              <p class="menu-price">$24</p>
+          </div>
+          <div class="menu-box-1">
+            <img src="/images/hyderabad-royal-saffron.png" alt="Hyderabad Royal Saffron" class="menu-image">
+            <p class="menu-name">Hyderabad Royal Saffron</p>
+            <p class="menu-price">$21</p>
+        </div>
+        </div>
+        <div id="wine-section" style="padding: 20px; text-align: center;">
+          <h2>Wine</h2>
+          <p>Warm and comforting soup options for any time of the day</p>
+        </div>
+        <!-- "Sparkling Wine" heading -->
+        <div class="center-container">
+          <h3>Sparkling Wine</h3>
+        </div>
+        
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/paul-chenea.png" alt="Paul Cheneau Fresh Life Brut Spain" class="menu-image">
+              <p class="menu-name">Paul Cheneau Fresh Life Brut Spain</p>
+              <p class="menu-price">6oz - $19</p>
+              <p class="menu-price">Bottle - $85</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/giro-robert.png" alt="Giro Robert Uma Creative Cava Spain 2018" class="menu-image">
+              <p class="menu-name">Giro Robert Uma Creative Cava Spain 2018</p>
+              <p class="menu-price">Bottle - $110</p>
+          </div>
+        </div>
+        <!-- "White Wine" heading -->
+        <div class="center-container">
+          <h3>White Wine</h3>
+        </div>
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/reif-blanc.png" alt="Reif Sauvignon Blanc Canada, 2022" class="menu-image">
+              <p class="menu-name">Reif Sauvignon Blanc Canada 2022</p>
+              <p class="menu-price">6oz - $16</p>
+              <p class="menu-price">Bottle - $62</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/Civias-Acanteo.png" alt="Civias Acanteo Chardonnay Italy, 2021" class="menu-image">
+              <p class="menu-name">Civias Acanteo Chardonnay Italy, 2021</p>
+              <p class="menu-price">6oz - $20</p>
+              <p class="menu-price">Bottle - $82</p>
+          </div>
+          <div class="menu-box-1">
+            <img src="/images/Schloss-Neuweier.png" alt="Schloss Neuweier Riesling Germany, 2020" class="menu-image">
+            <p class="menu-name">Schloss Neuweier Riesling Germany, 2020</p>
+            <p class="menu-price">6oz - $22</p>
+            <p class="menu-price">Bottle - $90</p>
+        </div>
+        <div class="menu-box-1">
+            <img src="/images/Pinnot.png" alt="Meyer-Fonné Pinot France, 2022" class="menu-image">
+            <p class="menu-name">Meyer-Fonné Pinot France, 2022</p>
+            <p class="menu-price">Bottle - $108</p>
+        </div>
+        </div>
+        <!-- "Red Wine" heading -->
+        <div class="center-container">
+          <h3>Red Wine</h3>
+        </div>
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/reif-cabernet.png" alt="Reif Cabernet Sauvignon Canada, 2021" class="menu-image">
+              <p class="menu-name">Reif Cabernet Sauvignon Canada, 2021</p>
+              <p class="menu-price">6oz - $16</p>
+              <p class="menu-price">Bottle - $62</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/tierra-del.png" alt="Tierra Del Fuego Classic Merlot Chile, 2022" class="menu-image">
+              <p class="menu-name">Tierra Del Fuego Classic Merlot Chile, 2022</p>
+              <p class="menu-price">6oz - $18</p>
+              <p class="menu-price">Bottle - $73</p>
+          </div>
+          <div class="menu-box-1">
+            <img src="/images/bonfante.png" alt="Bonfante & Chiarle Barbera Italy, 2015" class="menu-image">
+            <p class="menu-name">Bonfante & Chiarle Barbera Italy, 2015</p>
+            <p class="menu-price">6oz - $22</p>
+            <p class="menu-price">Bottle - $88</p>
+        </div>
+        <div class="menu-box-1">
+            <img src="/images/tierra-del-2019.png" alt="Meyer-Fonné Pinot France, 2022" class="menu-image">
+            <p class="menu-name">Tierra Del Fuego Gran Reserva Syrah Chile, 2019</p>
+            <p class="menu-price">Bottle - $105</p>
+        </div>
+        <div class="menu-box-1">
+          <img src="/images/cillar.png" alt="Cillar De Silos Torresilo Spain, 2020" class="menu-image">
+          <p class="menu-name">Cillar De Silos Torresilo Spain, 2020</p>
+          <p class="menu-price">Bottle - $205</p>
+      </div>
+        </div>
+        <div id="nonalcoholic-section" style="padding: 20px; text-align: center;">
+          <h2>Non Alcoholic</h2>
+          <p>Juicy and flavorful burgers made to perfection</p>
+        </div>
+        <!-- "Water" heading -->
+        <div class="center-container">
+          <h3>Water</h3>
+        </div>
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/evian-spring.png" alt="Evian Natural Spring" class="menu-image">
+              <p class="menu-name">Evian Natural Spring</p>
+              <p class="menu-price">$7.5</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/icelandic.png" alt="Icelandic Glacial Sparkling" class="menu-image">
+              <p class="menu-name">Icelandic Glacial Sparkling</p>
+              <p class="menu-price">$7.5</p>
+          </div>
+        </div>
+        <!-- "Tea & Coffee" heading -->
+        <div class="center-container">
+          <h3>Tea & Coffee</h3>
+        </div>
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/madras-kaapi.png" alt="Madras Kaapi" class="menu-image">
+              <p class="menu-name">Madras Kaapi</p>
+              <p class="menu-price">$6</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/house-tea.png" alt="House Tea" class="menu-image">
+              <p class="menu-name">House Tea</p>
+              <p class="menu-price">$7</p>
+          </div>
+        </div>
+        <!-- "Refreshing" heading -->
+        <div class="center-container">
+          <h3>Refreshing</h3>
+        </div>
+        <div class="menu-container-1">
+          <!-- Second set of menu boxes -->
+          <div class="menu-box-1">
+              <img src="/images/mango-lassi.png" alt="Mango Lassi" class="menu-image">
+              <p class="menu-name">Mango Lassi</p>
+              <p class="menu-price">$9</p>
+          </div>
+          <div class="menu-box-1">
+              <img src="/images/jigarthanda.png" alt="Jigarthanda" class="menu-image">
+              <p class="menu-name">Jigarthanda</p>
+              <p class="menu-price">$8</p>
+          </div>
+          <div class="menu-box-1">
+            <img src="/images/juices.png" alt="Jigarthanda" class="menu-image">
+            <p class="menu-name">Juices</p>
+            <p class="menu-price">$7</p>
+          </div>
+          <div class="menu-box-1">
+            <img src="/images/soda.png" alt="Jigarthanda" class="menu-image">
+            <p class="menu-name">Sodas</p>
+            <p class="menu-price">$4</p>
+        </div>
+        </div>
+        <div id="selectedspirits-section" style="padding: 20px; text-align: center;">
+          <h2>Selected Spirits</h2>
+          <p>Don't miss out on our special for the day</p>
+        </div>
+        <div class="container-2">
+          <div class="box-2">
+            <h3>Vodka 1 oz | 2 oz</h3>
+            <img src="/images/vodka.jpg" alt="vodka">
+            <p>Stoli $13 | $22 <br> Tito's $14 | $24 <br> Ciroc (Original, Peach) $15 | $26 <br> Goose $15 | $26</p>
+          </div>
+          <div class="box-2">
+            <h3>Gin 1 oz | 2 oz</h3>
+            <img src="/images/gin.png" alt="Spirit 2 Image">
+            <p>Bombay Sapphire $13 | $22 <br> Aviation $15 | $24 <br> Hendrick's $16 | $28 <br> Empress 1908  $17 | $30</p>
+          </div>
+          <div class="box-2">
+            <h3>Rum 1 oz | 2 oz</h3>
+            <img src="/images/rum.png" alt="Spirit 3 Image">
+            <p>Captain Morgan $13 | $22 <br> Sailor Jerry $15 | $26 <br> Appleton Estate 12 Yr $16 | $28 <br> El Dorado Special Reserve 15 Yr $22 | $38</p>
+          </div>
+          <div class="box-2">
+            <h3>Tequila 1 oz | 2 oz</h3>
+            <img src="/images/tequila.png" alt="vodka">
+            <p>El Jimador Blanco $13 | $22 <br> El Jimador Reposado  $14 | $24 <br> Casamigos Blanco $15 | $26 <br> Casamigos Reposado $15 | $26 <br> Grand Mayan Ultra $26 | $48 <br> Don Julio 1942 $35 | $64 </p>
+          </div>
+          <div class="box-2">
+            <h3>Whiskey 1 oz | 2 oz</h3>
+            <img src="/images/whiskey.png" alt="Spirit 2 Image">
+            <p>Jameson $13 | $22 <br> Jack Daniel's  $14 | $24 <br> Crown Royal $14 | $26 <br> Johnnie Walker Black $15 | $26 <br> Chivas Royal Salute 21 Yr $35 | $68 <br> Johnnie Walker Blue 21 yr $45 | $84 </p>
+          </div>
+          <div class="box-2">
+            <h3>Single Malt Whiskey <br> 1 oz | 2 oz</h3>
+            <img src="/images/single-malt-whiskey.jpg" alt="vodka">
+            <p>Glenfiddich 12 Yr $16 | $28 <br> The Glenlivet $16 | $28 <br> Nikka Yoichi $17 | $30 <br> The Macallan 12 Yr $22 | $40 <br> Glenfiddich 18 Yr $25 | $46 <br> Lagavulin 16 Yr $25 | $46</p>
+          </div>
+          <div class="box-2">
+            <h3>Cognac 1 oz | 2 oz</h3>
+            <img src="/images/cognac.png" alt="Spirit 2 Image">
+            <p>Hennessy VS $15 | $26 <br> Hennessy XO  $50 | $90 <br> Meukow Feline VSOP $19 | $34 <br> Courvoisier XO $46 | $88 <br> Remy Martin VSOP $20 | $38 <br> St Remy VSOP $13 | $22</p>
+          </div>
+          <div class="box-2">
+            <h3>Bourbon 1 oz | 2 oz</h3>
+            <img src="/images/bourbon.png" alt="Spirit 2 Image">
+            <p>Jim Beam $14 | $24 <br> Woodford Reserve $15 | $26 <br> Elijah Craig $17 | $30 <br> Knobs Creek $18 | $32</p>
+          </div>
+          <div class="box-2">
+            <h3>Mezcal 1 oz | 2 oz</h3>
+            <img src="/images/mezcal.png" alt="Spirit 2 Image">
+            <p>Ojo De Tigre Joven $17 | $30 <br> Madre  $26 | $48 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
